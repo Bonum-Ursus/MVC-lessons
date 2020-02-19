@@ -14,6 +14,9 @@
     <a href="/form/inputForm">To first input form</a>
     <br>
     <a href="/person/getPerson">To person input form</a>
+    <br>
+    <a href="/customer/showForm">To customer input form</a>
+
 
 </body>
 </html>

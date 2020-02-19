@@ -14,12 +14,12 @@ public class Person {
 
     public Person() {
         countryMap = new TreeMap<>();
-        countryMap.put("RU","Russia");
-        countryMap.put("DE","Germany");
-        countryMap.put("US","USA");
-        countryMap.put("IL","Italy");
-        countryMap.put("SP","Spain");
-        countryMap.put("UK","United Kingdom");
+        countryMap.put("Russia","Russia");
+        countryMap.put("Germany","Germany");
+        countryMap.put("USA","USA");
+        countryMap.put("Italy","Italy");
+        countryMap.put("Spain","Spain");
+        countryMap.put("United Kingdom","United Kingdom");
         favoriteLanguages = new TreeMap<>();
         favoriteLanguages.put("Java", "Java");
         favoriteLanguages.put("C#","C#");
