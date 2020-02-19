@@ -1,25 +1,13 @@
 package org.ursus;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.util.HashMap;
 import java.util.TreeMap;
 
 public class Person {
     private String firstName;
     private String lastName;
     private String country;
+    private TreeMap<String, String> favoriteLanguages;
     private String favoriteLanguage;
-
-    public String getFavoriteLanguage() {
-        return favoriteLanguage;
-    }
-
-    public void setFavoriteLanguage(String favoriteLanguage) {
-        this.favoriteLanguage = favoriteLanguage;
-    }
-
     private TreeMap<String, String> countryMap;
 
     public Person() {
@@ -30,6 +18,24 @@ public class Person {
         countryMap.put("IL","Italy");
         countryMap.put("SP","Spain");
         countryMap.put("UK","United Kingdom");
+        favoriteLanguages = new TreeMap<>();
+        favoriteLanguages.put("Java", "Java");
+        favoriteLanguages.put("C#","C#");
+        favoriteLanguages.put("Python","Python");
+        favoriteLanguages.put("Ruby","Ruby");
+        favoriteLanguages.put("C++","C++");
+    }
+
+    public String getFavoriteLanguage() {
+        return favoriteLanguage;
+    }
+
+    public void setFavoriteLanguage(String favoriteLanguage) {
+        this.favoriteLanguage = favoriteLanguage;
+    }
+
+    public TreeMap<String, String> getFavoriteLanguages() {
+        return favoriteLanguages;
     }
 
     public TreeMap<String, String> getCountryMap() {
