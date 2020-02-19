@@ -9,6 +9,8 @@ public class Person {
     private TreeMap<String, String> favoriteLanguages;
     private String favoriteLanguage;
     private TreeMap<String, String> countryMap;
+    private String OS;
+    private TreeMap<String, String> OSmap;
 
     public Person() {
         countryMap = new TreeMap<>();
@@ -24,6 +26,23 @@ public class Person {
         favoriteLanguages.put("Python","Python");
         favoriteLanguages.put("Ruby","Ruby");
         favoriteLanguages.put("C++","C++");
+        OSmap = new TreeMap<>();
+        OSmap.put("Linux Arch", "Linux Arch");
+        OSmap.put("Linux Ubuntu", "Linux Ubuntu");
+        OSmap.put("Windows X", "Windows X");
+        OSmap.put("Mac OS", "Mac OS");
+    }
+
+    public TreeMap<String, String> getOSmap() {
+        return OSmap;
+    }
+
+    public String getOS() {
+        return OS;
+    }
+
+    public void setOS(String OS) {
+        this.OS = OS;
     }
 
     public String getFavoriteLanguage() {

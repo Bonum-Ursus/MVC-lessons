@@ -15,6 +15,7 @@
     <h1>Last name: ${person.lastName}</h1>
     <h1>Country: ${person.country}</h1>
     <h1>Favorite Language: ${person.favoriteLanguage}</h1>
+    <h1>Operating System: ${person.OS}</h1>
     <a href="/"><h3>Back to main menu</h3></a>
 
 </body>
