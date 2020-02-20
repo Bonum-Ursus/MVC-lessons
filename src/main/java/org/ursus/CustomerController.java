@@ -35,6 +35,8 @@ public class CustomerController {
             @Valid @ModelAttribute("customer") Customer customer,
             BindingResult bindingResult){
         LOG.info("last name: |{}|", customer.getLastName());
+        LOG.info("Free passes: |{}|", customer.getFreePasses());
+        LOG.info("Free passes: |{}|", customer.getPostalCode());
         if(bindingResult.hasErrors())
             return "customer-form";
         else
